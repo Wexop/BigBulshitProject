@@ -16,7 +16,7 @@ html, body, .bigTexteContainerContainer {
     max-width: 100%;
     padding: 1rem;
     align-self: center;
-    font-family: "Arial Black";
+    font-family: "Arial Black", 'Fjalla One', sans-serif;
     font-size: 20vmin;
     color: white;
     text-align: center;
