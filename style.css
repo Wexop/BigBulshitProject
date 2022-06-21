@@ -1,0 +1,29 @@
+html, body, .bigTexteContainerContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.bigTexteContainerContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-transform: uppercase;
+    background-color: black;
+}
+
+.BigTexte {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    align-self: center;
+    font-family: "Arial Black";
+    font-size: 20vmin;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 1050px) {
+    .BigTexte {
+        font-size: 15vmin;
+    }
+}
