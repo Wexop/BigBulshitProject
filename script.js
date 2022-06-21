@@ -1,1 +1,2 @@
-document.getElementsByClassName("BigTexte")[0].style.color = "red";
+document.getElementById("BigTexte").style.borderColor = "red";
+alert("OUI");
