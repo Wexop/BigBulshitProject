@@ -6,7 +6,7 @@ let wordsTab = ["Enculé", "Connard", "je t'encule", "gros con", "ta gueule",
 const wordOfThisPage = decodeURI(getInLink("word"));
 let focus = "BigTexte"
 if (wordOfThisPage !== "null") {
-    document.getElementById('BigTexte').textContent = wordOfThisPage
+    document.getElementById('BigTexte').textContent = wordOfThisPage.replace("+", " ")
 } else {
     focus = "homeButton"
     document.getElementById('BigTexte').style.textDecoration = "none";
