@@ -77,7 +77,11 @@ function getVal() {
     document.getElementById("buttonInHome").href = "permaWord.html?word=" + valChiffree;
     document.wordForm.action = "permaword.html?word=" + valChiffree;
     if (homePage) {
-        document.getElementById("BigTexte").textContent = "https://bulshits-words.netlify.app/permaword.html?word=" + valChiffree;
+        if (val != " " || "") {
+            document.getElementById("BigTexte").textContent = "https://bulshits-words.netlify.app/permaword.html?word=" + valChiffree.replaceAll(" ", "%20");
+        } else {
+            document.getElementById("BigTexte").textContent = "YOUR LINK WILL BE HERE"
+        }
     }
 }
 
