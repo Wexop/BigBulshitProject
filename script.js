@@ -24,12 +24,17 @@ let wordsTab = ["Enculé", "Connard", "je t'encule", "gros con", "ta gueule",
 const wordOfThisPage = decodeURI(getInLink("word")).replaceAll("+", " ");
 const wordDechiffre = dechifrement(wordOfThisPage, crypteDico);
 let focus = "BigTexte"
+let homePage = false
 if (wordOfThisPage !== "null") {
     document.getElementById('BigTexte').textContent = wordDechiffre
 } else {
-    focus = "homeButton"
-    document.getElementById('BigTexte').style.textDecoration = "none";
-    document.getElementById('BigTexte').innerHTML = '<a href = "index.html" id="homeButton">' + " Va te créer un lien bg" + '</a>';
+    if (document.getElementById('BigTexte').className === "getYourLink") {
+        homePage = true;
+    } else {
+        focus = "homeButton"
+        document.getElementById('BigTexte').style.textDecoration = "none";
+        document.getElementById('BigTexte').innerHTML = '<a href = "index.html" id="homeButton">' + "Go create your custom word !" + '</a>';
+    }
 }
 
 
@@ -71,6 +76,9 @@ function getVal() {
     let valChiffree = chiffrement(val, crypteDico);
     document.getElementById("buttonInHome").href = "permaWord.html?word=" + valChiffree;
     document.wordForm.action = "permaword.html?word=" + valChiffree;
+    if (homePage) {
+        document.getElementById("BigTexte").textContent = "https://bulshits-words.netlify.app/permaword.html?word=" + valChiffree;
+    }
 }
 
 function getInLink(param) {

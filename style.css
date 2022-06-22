@@ -83,3 +83,10 @@ form {
 #buttonInHome {
     font-size-adjust: initial;
 }
+
+.getYourLink {
+    color: red;
+    align-self: center;
+    font-weight: bold;
+    text-align: center;
+}
