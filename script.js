@@ -69,7 +69,7 @@ function dechifrement(mot, dic) {
 function getVal() {
     let val = document.getElementById("word").value;
     let valChiffree = chiffrement(val, crypteDico);
-    document.getElementById("buttonInHome").href = "permaWord.html?word=" + valChiffree;
+    document.getElementById("buttonInHome").href = "permaword.html?word=" + valChiffree;
     document.wordForm.action = "permaWord.html?word=" + valChiffree;
 }
 
