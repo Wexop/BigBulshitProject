@@ -70,7 +70,7 @@ function getVal() {
     let val = document.getElementById("word").value;
     let valChiffree = chiffrement(val, crypteDico);
     document.getElementById("buttonInHome").href = "permaWord.html?word=" + valChiffree;
-    document.wordForm.action = "permaWord.html?word=" + valChiffree;
+    document.wordForm.action = "permaword.html?word=" + valChiffree;
 }
 
 function getInLink(param) {
