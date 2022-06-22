@@ -89,4 +89,5 @@ form {
     align-self: center;
     font-weight: bold;
     text-align: center;
+    overflow-wrap: anywhere;
 }
