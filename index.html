@@ -18,7 +18,7 @@
     <a class="BigTexte" href="permaWord.html?word=" id="buttonInHome">
         <p class="BigTexte">Click here !</p>
     </a>
-    <form action="permaWord.html" method="GET">
+    <form action="#" id="wordForm" method="post" name="wordForm" onchange="getVal()">
         <input class="formControl"
                id="word"
                name="word"
@@ -27,6 +27,7 @@
                required
                type="text"
                value=""
+
         />
     </form>
 </div>
