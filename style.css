@@ -30,23 +30,30 @@ body {
 form {
     width: 50%;
     align-content: center;
+    display: flex;
+    flex-direction: column;
 
 }
 
 #word {
-    width: 100%;
+    width: 70%;
+    align-self: center;
     border-radius: 30px;
     border: 1px solid white;
     text-align: center;
     padding: 1rem;
+
+    transition: .5s ease-in-out all;
+
 }
 
 #word:hover {
+    width: 100%;
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.7);
     transition: .5s ease-in-out all;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1150px) {
     .BigTexte {
         font-size: 15vmin;
         overflow-wrap: anywhere;
@@ -63,8 +70,12 @@ form {
     }
 
     #word {
-        width: 70%;
+        width: 40%;
         align-self: center;
+    }
+
+    #word:hover {
+        width: 70%;
     }
 
 }
