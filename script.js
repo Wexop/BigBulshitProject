@@ -3,10 +3,10 @@ let colorTab = ["red", "white", "blue", "green", "yellow", "#00ff7b", "#4c00ff",
 let colorTabRevolt = [];
 
 const crypteDico = {
-    "a": "ç", "b": "hhh", "c": "$", "d": "x", "e": ",", "f": "é", "g": "*", "h": "hh", "i": "v",
+    "a": "ç", "b": "hhh", "c": "$", "d": "x", "e": "ahahaha", "f": "é", "g": "*", "h": "hh", "i": "v",
     "j": "=", "k": "sdf", "l": "jsp", "m": "aze", "n": "7", "o": "p", "p": "o", "q": "aaa", "r": "q",
     "s": "à", "t": "zzzz", "u": "n", "v": "esd", "w": "qsdq", "x": "^^", "y": "sdsqqq", "z": "fff",
-    "A": "ffffd", "B": "fffv", "C": "ffvbg", "D": "fsds", "E": "ssssd", "F": "dqsdqs", "G": "qdqdqwxc",
+    "A": "ffffd", "B": "fffv", "C": "ffvbg", "D": "fsds", "E": "ssazaakkssd", "F": "dqsdqs", "G": "qdqdqwxc",
     "H": "qsdqdqxs", "I": "qsdqxq", "J": "qsdddd", "K": "bbbbb", "L": "bbb", "M": "vcv", "N": "nnn",
     "O": "nnnn", "P": "dsqqq", "Q": "ccc", "R": "vvv", "S": "vfg", "T": "!*", "U": "*!", "V": "dlll",
     "W": "{]", "X": "qs!", "Y": "qsdqs", "Z": "sdssqbngzw", "0": "+++", "1": "kr", "2": "ôp", "3": "sqp",
