@@ -120,7 +120,9 @@ function changeColor() {
 }
 
 function getLink() {
-    var content = document.getElementById("BigTexte").innerText;
+    let val = document.getElementById("word").value;
+    let valChiffree = chiffrement(val, crypteDico);
+    var content = "https://bulshits-words.netlify.app/permaword.html?word=" + valChiffree.replaceAll(" ", "%20");
     navigator.clipboard.writeText(content)
 }
 
