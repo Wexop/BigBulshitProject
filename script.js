@@ -78,7 +78,7 @@ function getVal() {
     let val = document.getElementById("word").value;
     let valChiffree = chiffrement(val, crypteDico);
     document.getElementById("buttonInHome").href = "permaWord.html?word=" + valChiffree;
-    document.wordForm.action = "permaword.html?word=" + valChiffree;
+    document.wordForm.action = "";
     if (homePage) {
         if (val != " " || "") {
             document.getElementById("BigTexte").textContent = "https://bulshits-words.netlify.app/permaword.html?word=" + valChiffree.replaceAll(" ", "%20");

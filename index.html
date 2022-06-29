@@ -15,13 +15,14 @@
 
 <body>
 <div class="bigTexteContainer">
-    <a class="BigTexte" href="permaWord.html?word=" id="buttonInHome">
+    <a class="BigTexte" href="permaWord.html?word=" id="buttonInHome" target="_blank">
         <p class="BigTexte">Click here !</p>
     </a>
-    <form action="#" id="wordForm" method="post" name="wordForm" onchange="getVal()" target="_blank">
+    <form action="" id="wordForm" method="post" name="wordForm" onchange="getVal()">
         <input class="formControl"
                id="word"
                name="word"
+               onKeyPress="if (event.which == 13) return false;"
                onchange="getVal()"
                onkeypress="getVal()"
                placeholder="Your Word"
