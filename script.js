@@ -60,12 +60,15 @@ function dechifrement(mot, dic) {
     let texteDechiffre = "";
     let motSplit = mot.split(" ");
     for (let i = 0; i < motSplit.length; i++) {
+        let keyIsIn = false
         for (let key in dic) {
             if (dic[key] === motSplit[i]) {
                 texteDechiffre += key;
+                keyIsIn = true
             }
-
-
+        }
+        if (!keyIsIn) {
+            texteDechiffre += motSplit[i]
         }
     }
     return texteDechiffre
