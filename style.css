@@ -91,3 +91,46 @@ form {
     text-align: center;
     overflow-wrap: anywhere;
 }
+
+.copyLinkContainer {
+    align-self: center;
+    width: 100%;
+    text-align: center;
+
+}
+
+#copyLinkButton {
+    -webkit-animation: changeColor 2s infinite;
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+    align-self: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    transition: .5s ease-in-out all;
+}
+
+#copyLinkButton:hover {
+    box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.7);
+    padding: 25px;
+    transition: .5s ease-in-out all;
+}
+
+@-webkit-keyframes changeColor {
+    0% {
+        background-color: red
+    }
+    25% {
+        background-color: slategrey
+    }
+    50% {
+        background-color: green
+    }
+    75% {
+        background-color: aqua
+    }
+    100% {
+        background-color: red
+    }
+}

@@ -119,4 +119,9 @@ function changeColor() {
     document.getElementById(focus).style.color = color;
 }
 
+function getLink() {
+    var content = document.getElementById("BigTexte").innerText;
+    navigator.clipboard.writeText(content)
+}
+
 setInterval(changeColor, 200);
